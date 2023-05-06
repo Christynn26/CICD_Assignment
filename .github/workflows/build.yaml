@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: StartsWith(github.event.head_commit.message. "NORUN") != true
 
     steps:
       - name: Checkout
