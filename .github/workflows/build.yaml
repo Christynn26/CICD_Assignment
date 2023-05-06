@@ -47,7 +47,7 @@ jobs:
                 "fields": [
                   {
                     "type": "mrkdwn",
-                    "text": "Name: HLA YAMIN AYE"
+                    "text": "Name: HLA YAMIN AYE "
                   },
                   {
                     "type": "mrkdwn",
