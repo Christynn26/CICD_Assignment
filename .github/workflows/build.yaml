@@ -31,19 +31,52 @@ jobs:
         uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
-            { "blocks": [
+            {
+            "blocks": [
+              {
+                "type": "header",
+                "text": {
+                  "type": "plain_text",
+                  "text": "CICD TEST",
+                  "emoji": true
+                }
+              },
+              {
+                "type": "section",
+                "fields": [
+                  {
+                    "type": "mrkdwn",
+                    "text": "Name: C"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "Email: c@gmail.com"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "Matriculation: A011111N"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "Repository:\n repositoryname"
+                  }
+                ]
+              },
               {
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "TESTING"
-                  }
+                  "text": "railway_url"
                 },
-              {
-                "type": "divider"
-              },
-              {
-                "type": "divider"
+                "accessory": {
+                  "type": "button",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Go",
+                    "emoji": true
+                  },
+                  
+                }
               }
             ]
             }
