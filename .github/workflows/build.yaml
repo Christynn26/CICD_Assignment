@@ -75,7 +75,8 @@ jobs:
                     "type": "plain_text",
                     "text": "Go",
                     "emoji": true
-                  }
+                  },
+                  "url": "${{ secrets.RAILWAY_URL }}"
                 }
               }
             ]
