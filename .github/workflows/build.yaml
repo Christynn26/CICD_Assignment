@@ -38,7 +38,7 @@ jobs:
                 "type": "header",
                 "text": {
                   "type": "plain_text",
-                  "text": "CICD TEST",
+                  "text": "DipSA56 CICD Submission"
                   "emoji": true
                 }
               },
@@ -47,7 +47,7 @@ jobs:
                 "fields": [
                   {
                     "type": "mrkdwn",
-                    "text": "Name: HLA YAMIN AYE "
+                    "text": "Name: HLA YAMIN AYE"
                   },
                   {
                     "type": "mrkdwn",
