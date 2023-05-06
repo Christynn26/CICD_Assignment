@@ -46,19 +46,19 @@ jobs:
                 "fields": [
                   {
                     "type": "mrkdwn",
-                    "text": "Name: C"
+                    "text": "Name: HLA YAMIN AYE"
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "Email: c@gmail.com"
+                    "text": "Email: e1112931@u.nus.edu"
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "Matriculation: A011111N"
+                    "text": "Matriculation: A0269548J"
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "Repository:\n repositoryname"
+                    "text": "Repository:\n ${{ github.repositoryUrl }}"
                   }
                 ]
               },
@@ -66,7 +66,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "railway_url"
+                  "text": ${{ secrets.RAILWAY_URL }}
                 },
                 "accessory": {
                   "type": "button",
