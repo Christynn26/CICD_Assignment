@@ -3,11 +3,12 @@ name: CICD Assignment
 on:
   push:
     branches:
-      - main
+      - 'release/v[1-9]+.[0-9]+'
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: StartsWith(github.event.head_commit.message. "NORUN") != true
 
     steps:
       - name: Checkout
@@ -46,19 +47,19 @@ jobs:
                 "fields": [
                   {
                     "type": "mrkdwn",
-                    "text": "Name: C"
+                    "text": "Name: HLA YAMIN AYE"
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "Email: c@gmail.com"
+                    "text": "Email: e1112931@u.nus.edu"
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "Matriculation: A011111N"
+                    "text": "Matriculation: A0269548J"
                   },
                   {
                     "type": "mrkdwn",
-                    "text": "Repository:\n repositoryname"
+                    "text": "Repository:\n ${{ github.server_url }}/${{github.repository}}"
                   }
                 ]
               },
@@ -66,7 +67,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "railway_url"
+                  "text": "${{ secrets.RAILWAY_URL }}"
                 },
                 "accessory": {
                   "type": "button",
